@@ -1,12 +1,12 @@
-# _Galactic Age Calculator_
+# _Rental API Application_
 
-#### _Exercise in building development environments with npm and test driven development, September 4, 2020_
+#### _Team week web application, September 13, 2020_
 
-#### By _Forrest Reiland_
+#### By _Forrest Reiland, Adam Mansell, Grant Eadie, Jeff Dinsmore_
 
 ## Description 
 
-_This application allows a user to input their age (in years) and their race. It then calculates their age in solar orbits on Mercury, Venus, Mars, and Jupiter. Additionally it calculates a users life expectatncy on each planet and how many years on that planet they have to live. Finally, if a users input age is greater than the life expectancy for their demographic, it returns the number of years that they have gone over the average life expectancy for their demographic._
+_This application allows a user to obtain useful data for rental properties they are interest in. _
 
 ## Specifications
 
