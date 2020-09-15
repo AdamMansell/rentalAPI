@@ -1,9 +1,9 @@
 .portland-vector {
   position:absolute;
-      top: 450px;
-      left: 350px;
+      top: 300px;
+      left: 200px;
       z-index: 1;
-  width: 75rem;
+  width: 65rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,16 +28,39 @@
 
 .small {
   padding-left: 20px;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .jumbotron {
   background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.text-large {
-  font-size: 90px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 input[type=text] {
   border: 2px solid black;
@@ -161,3 +184,17 @@ nav ul li a {
   }
 
 } */
+
+
+  .cityInfo {
+    display: none;
+  }
+
+  #neighborhood {
+    z-index: 2;
+    float: right;
+    text-decoration: underline;
+    font-size: 35px;
+    padding-right: 330px;
+    padding-top: 50px;
+  }
