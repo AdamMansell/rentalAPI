@@ -21,8 +21,8 @@
 }
 
 .highlight:hover {
-  opacity: .5;
-  fill: orange;
+  opacity: .75;
+  fill: lightblue;
 }
 
 
