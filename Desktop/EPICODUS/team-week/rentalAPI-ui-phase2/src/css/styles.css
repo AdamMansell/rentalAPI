@@ -10,6 +10,7 @@
 }
 
 .highlight:hover {
+  transition-duration: 300ms;
   opacity: .75;
   fill: lightblue;
   cursor: crosshair;
