@@ -20,7 +20,7 @@ function getElements(response){
       
     }
     // let string = response.listings[0].squareFootage.toString("");
-    console.log((response.listings[0].squareFootage).length);
+    console.log(typeof (response.listings[0].squareFootage));
     $("#outputListing1DaysOnMarket").text("This property has been on the market for " + response.listings[0].daysOld + " days.");
     $("#outputListing1Bedrooms").text("Bedrooms: " + response.listings[0].bedrooms);
     $("#outputListing1Bathrooms").text("Bathrooms: " + response.listings[0].bathrooms);
@@ -66,9 +66,11 @@ $(document).ready(function () {
   let reply_click = function() {
     newNeighborhoods = this.id;
     $(".cityInfo").hide();
+    $("#check-listing").hide();
     $("#neighborhood").html((((this.id).split(/(?=[A-Z])/)).join(' ')).toLowerCase() + "<hr>");
     $(".cityInfo").fadeIn(1000);
     $("hr").fadeIn(4000);
+    $("#check-listing").fadeIn(3000);
   };
 
   getNeighborhoods(reply_click);
