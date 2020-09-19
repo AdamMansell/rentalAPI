@@ -46,6 +46,6 @@ _Any known issues or contributions, please reach out to Jeff Dinsmore by email a
 
 ## License
 
-Copyright (c) 2020, **_Jeff Dinsmore, Forrest Reiland, Grant Eadie, Adam Mansell_**_
+Copyright (c) 2020, **_Jeff Dinsmore, Forrest Reiland, Grant Eadie, Adam Mansell_**
 
 This software is licensed under the MIT license.
