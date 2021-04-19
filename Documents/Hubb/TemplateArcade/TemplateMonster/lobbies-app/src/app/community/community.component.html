@@ -1,0 +1,22 @@
+<app-main-layout
+[theme]="event?.theme"
+[mediaUrl]="mediaUrl"
+[eventBackgroundImage]="event?.community?.backgroundImage"
+[eventLogo]="event?.logo" 
+[scope]="scope" >
+  <div [ngClass]="(event?.theme?.client && event?.theme?.client?.length) ? 'communityContainer ' + event?.theme?.client : 'communityContainer'"  >
+    <comm-header [event]="event"  [theme]="theme" ></comm-header>
+    <comm-links 
+    *ngIf="event?.community?.groups && event?.community?.groups.length" 
+    [event]="event" 
+    [scope]="scope"
+    [mediaUrl]="mediaUrl"></comm-links>
+
+    <div class="commCarouselContainer">
+      <ng-container *ngIf="event?.community?.carousel?.items && event?.lobby?.carousel?.items?.length">
+        <community-carousel [event]="event" [scope]="scope" [mediaUrl]="mediaUrl" ></community-carousel>
+        <community-tiled-carousel [event]="event" [mediaUrl]="mediaUrl" [scope]="scope"></community-tiled-carousel>
+      </ng-container>
+    </div>
+</div>
+</app-main-layout>

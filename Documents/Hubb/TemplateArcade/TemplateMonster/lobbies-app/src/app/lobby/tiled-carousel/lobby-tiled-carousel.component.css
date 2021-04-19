@@ -1,0 +1,141 @@
+#tiled-carousel-wrapper {
+  background-color: var(--carousel-background-color);
+  display: flex none;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-title {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', 'san-serif';
+  margin-left: 2%;
+  margin-top: 0%;
+  padding-top: 2%;
+  color: rgb(146, 145, 145);
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+  width: 95%;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  height: 150px;
+  width: 45%;
+  min-width: 308px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  height: 30%;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-weight: 300;
+  max-height: 10%;
+  font-size: 14px;
+}
+
+.description {
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+  height: 40%;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide div {
+  width: 50%;
+}
+
+.swiper-slide img {
+  max-width: 150px;
+  height: 100%;
+}
+
+.swiper-slide div p {
+  margin: 0px;
+}
+
+.slider-button {
+  border-radius: 100%;
+  background-color: #212429;
+  height: 55px;
+  width: 55px;
+  color: var(--primary-color);
+}
+
+a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #1f2227;
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: thin;
+  font-weight: light;
+  font-size: 14px;
+  text-align: center;
+  width: 123px;
+  height: 18%;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--primary-color);
+  color: black;
+  transition: 150ms;
+}
+
+@media screen and (max-width: 1150px) {
+  .carousel-main-container {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .swiper-slide {
+    margin-right: 2px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 762px) {
+  .heading {
+    font-size: 12px;
+  }
+  button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 653px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #tiled-carousel-wrapper { display: none; }
+}

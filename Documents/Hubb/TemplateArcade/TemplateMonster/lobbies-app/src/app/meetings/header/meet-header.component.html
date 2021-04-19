@@ -1,0 +1,5 @@
+<div class="headerContainer">
+  <h2 *ngIf="event?.meetings?.overline" >{{ event?.meetings?.overline | uppercase}}</h2>
+  <h1 *ngIf="event?.meetings?.heading" >{{ event?.meetings?.heading | uppercase}}</h1>
+  <p class="summary" *ngIf="event?.meetings?.description" >{{ event?.meetings?.description }}</p>
+</div>

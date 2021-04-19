@@ -1,0 +1,32 @@
+<app-main-layout
+[theme]="event?.theme"
+[mediaUrl]="mediaUrl"
+[eventBackgroundImage]="event?.exhibition?.backgroundImage"
+[eventLogo]="event?.logo"
+[scope]="scope" >
+    <div [ngClass]="(event?.theme?.client && event?.theme?.client?.length) ? 'exhibitionContainer ' + event?.theme?.client : 'exhibitionContainer'"  >
+      <exhib-header [event]="event"></exhib-header>
+      <div class="expoCarouselContainer">
+        <ng-container *ngIf="event?.exhibition?.carousel?.items && event?.exhibition?.carousel?.items?.length">
+          <exhibition-carousel 
+          [event]="event" 
+          [scope]="scope" 
+          [mediaUrl]="mediaUrl" ></exhibition-carousel>
+
+          <exhibition-tiled-carousel 
+          [event]="event" 
+          [scope]="scope" 
+          [mediaUrl]="mediaUrl" ></exhibition-tiled-carousel>
+
+        </ng-container>
+      </div>
+      <exhib-sponsors 
+      *ngIf="event?.sponsors && event?.sponsors.length" 
+      [eventSponsors]="event?.sponsors" 
+      [eventScope]="scope"
+      [mediaUrl]="mediaUrl" ></exhib-sponsors>
+  </div>
+</app-main-layout>
+<pre style="color: white;" >
+  {{ event?.theme?.client }}
+</pre>

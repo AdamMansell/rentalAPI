@@ -1,0 +1,18 @@
+<div class="desktop-container">
+  <img id="session-image" src="{{ mediaUrl }}/{{ scope}}-public/resources/{{ sessionsData?.backgroundImage }}" />
+  
+  <a
+  [ngClass]="link?.title ? 'overlay overlay-white overlay-button_' + link.location : ''"
+  *ngFor="let link of sessionsData?.columnLinks; let index = index;"
+  [href]="link.href"
+	[title]="link.title"
+  target="_top"></a>
+   
+  <a  [ngClass]="tile?.title ? 'overlay overlay-tiles-box-' + tile.location : ''"
+  *ngFor="let tile of sessionsData?.wallLinks;"
+	[href]="tile.href"
+  [title]="tile.title"
+  target="_top"></a>
+
+</div><!-- desktop  -->
+

@@ -1,0 +1,27 @@
+img {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  /* Not sure why this mask being overridden to 'none' in browser */
+  mask-image: linear-gradient (1to bottom,#000000 0%, rgba(0, 0, 0, 0) 38.02%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  background-color: #212429;
+  z-index: -5;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 55vw;
+  background-color: #212429;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="shape">
+    <svg *ngIf="!bgshape" width="100%" height="auto">
+      <rect x="120" y="150" width="630" height="250" stroke="#424549" fill="transparent" stroke-width="1" transform="rotate(12)"/>
+    </svg>
+    <img *ngIf="bgshape" src="{{mediaUrl}}/{{ scope }}-public/resources/{{ bgshape }}">
+  </div>
+  <img src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ backgroudImage }}">
+</div>

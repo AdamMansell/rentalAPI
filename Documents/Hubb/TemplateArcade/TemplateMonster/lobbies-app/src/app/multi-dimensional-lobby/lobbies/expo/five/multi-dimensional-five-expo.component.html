@@ -1,0 +1,19 @@
+<div class="desktop-container">
+<img id="expo-image" src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ expoData?.backgroundImage }}" />
+  
+  <a
+  *ngFor="let link of expoData?.columnLinks;"
+  [ngClass]="link?.title ? 'overlay overlay-white column-button-' + link.location : ''"
+  [href]="link.href"
+  [title]="link.title"
+  target="_top" >
+  &nbsp;</a>
+    
+  <a 
+  *ngFor="let tile of expoData?.wallLinks;"
+  [ngClass]="tile?.title ? 'overlay overlay-tiles-box-' + tile.location : ''"
+	[href]="tile.href"
+  [title]="tile.title"
+	target="_top">
+	&nbsp;</a>
+</div>

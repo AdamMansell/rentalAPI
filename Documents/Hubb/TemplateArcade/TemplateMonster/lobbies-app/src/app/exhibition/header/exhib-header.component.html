@@ -1,0 +1,9 @@
+<div class="headerContainer">
+  <h2 *ngIf="event?.exhibition?.overline && event?.exhibition?.overline.length" >{{ event?.exhibition?.overline | uppercase }}</h2>
+  <h1 *ngIf="event?.exhibition?.heading && event?.exhibition?.heading.length" >{{ event?.exhibition?.heading | uppercase }}</h1>
+  <p class="summary" *ngIf="event?.exhibition?.description[0]" >{{ event?.exhibition?.description[0] }}</p>
+  <p class="summary" *ngIf="event?.exhibition?.description[1]" >{{ event?.exhibition?.description[1] }}</p>
+  <a target="_parent" *ngIf="event?.exhibition?.button?.buttonLink" href="{{ event?.exhibition?.button?.buttonLink }}">
+    {{event?.exhibition?.button?.buttonText | uppercase }}
+  </a>
+</div>

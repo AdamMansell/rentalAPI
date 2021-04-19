@@ -1,0 +1,12 @@
+<div class='headerContainer'>
+  <h2 *ngIf="overline && overline.length" >{{ overline | uppercase }}</h2>
+  <h1 *ngIf="heading && heading.length" class="eventName">{{ heading | uppercase}}</h1>
+  <h1 *ngIf="name"><span class="eventName">{{ name | uppercase }}</span><span class="eventYear">{{ year }}</span></h1>
+  <div class="summary">
+      <ng-container  *ngIf="descriptions && descriptions.length">
+        <div *ngFor="let description of descriptions">
+          <p>{{ description }}</p>
+        </div>
+      </ng-container>
+  </div>
+</div>

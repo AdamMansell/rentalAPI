@@ -1,0 +1,32 @@
+<div id="carousel-main-container">
+  <p class="carousel-title"> {{ heading | uppercase }}</p>
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let slide of slides">
+        <div class="image-div">
+          <img src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ slide.image }}" alt="slider image">
+        </div>
+        <div id="slide-description" >
+          
+          <div id="slide-desc-top" >
+            <p [ngClass]="{ 'title':true, 'title-regular': !custom }" >{{slide.title | uppercase}}</p>
+            <p class="heading" *ngIf="custom" >{{slide.heading | uppercase}}</p>
+          </div>
+
+          <div *ngIf="!custom" id="slide-desc-mid" >
+            <p class="slide-desc-mid-heading" >{{slide.heading | uppercase}}</p>
+            <p class="description" >{{slide.description}}</p>
+          </div>
+
+          <a [ngClass]="{ 'button-padding': custom }" href="{{slide.buttonLink}}" target="_top">{{buttonText | uppercase }}</a>
+        </div>
+      </div> 
+      
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Add Arrows -->
+    <div class="swiper-button-next slider-button"></div> 
+    <!-- <div class="swiper-button-prev slider-button"></div> -->
+  </swiper>
+</div>

@@ -1,0 +1,30 @@
+.exhibitionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100%;
+}
+
+exhib-sponsors {
+  width: 100vw;
+}
+
+exhib-header {
+  margin-bottom: 20%;
+  min-height: 350px;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 1150px) {
+  .exhibitionContainer {
+    width: 100vw;
+  }
+
+  .expoCarouselContainer {
+    background-color:#1C1F23;
+  }
+
+  exhib-sponsors {
+    background-color: #212429;
+  }
+}

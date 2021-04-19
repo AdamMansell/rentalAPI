@@ -1,0 +1,16 @@
+<div id="tiled-carousel-wrapper">
+  <p class="carousel-title">{{ event?.featuredSessionsCarousel?.heading | uppercase }}</p>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let slide of slides">
+      <div class="image-div">
+        <img src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ slide.image }}" alt="slider image">
+      </div>
+      <div>
+        <p class="title">{{slide.title | uppercase}}</p>
+        <p class="heading">{{slide.heading | uppercase}}</p>
+        <p class="description">{{slide.description}}</p>
+        <a href="{{slide.buttonLink}}" target="_top">{{event.featuredSessionsCarousel?.buttonText | uppercase }}</a>
+      </div>
+    </div> 
+  </div>
+</div>

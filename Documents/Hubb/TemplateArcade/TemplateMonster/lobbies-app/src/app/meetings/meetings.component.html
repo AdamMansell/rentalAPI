@@ -1,0 +1,27 @@
+<app-main-layout
+[theme]="event?.theme"
+[mediaUrl]="mediaUrl"
+[eventBackgroundImage]="event?.meetings?.backgroundImage" 
+[eventLogo]="event?.logo" 
+[scope]="scope" >
+  <div [ngClass]="(event?.theme?.client && event?.theme?.client?.length) ? 'meetingsContainer ' + event?.theme?.client : 'meetingsContainer'" >
+    <meet-header [event]="event"></meet-header>
+    <meet-links 
+    *ngIf="event.meetings.meetings && event.meetings.meetings.length" 
+    [event]="event" 
+    [scope]="scope"
+    [mediaUrl]="mediaUrl" ></meet-links>
+    <div class="meetingsCarouselContainer">
+      <ng-container *ngIf="event?.meetings?.carousel?.items && event?.meetings?.carousel?.items?.length">
+        <meetings-carousel 
+        [event]="event" 
+        [scope]="scope"
+        [mediaUrl]="mediaUrl"></meetings-carousel>
+        <meetings-tiled-carousel 
+        [event]="event" 
+        [scope]="scope"
+        [mediaUrl]="mediaUrl"></meetings-tiled-carousel>
+      </ng-container>
+    </div>
+</div>
+</app-main-layout>

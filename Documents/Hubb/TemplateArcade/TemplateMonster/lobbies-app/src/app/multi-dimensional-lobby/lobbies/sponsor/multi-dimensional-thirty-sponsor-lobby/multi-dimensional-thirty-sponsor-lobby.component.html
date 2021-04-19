@@ -1,0 +1,18 @@
+<div class="desktop-container">
+  <img id="session-image"
+    src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ sponsorData?.backgroundImage }}" />
+  
+  <a class="overlay overlay-white overlay-back"
+  [href]="sponsorData?.columnLinks[0].href"
+  [title]="sponsorData?.columnLinks[0].title"
+  target="_top">
+	&nbsp;</a>
+  
+  <a *ngFor="let tile of sponsorData?.wallLinks"
+  [ngClass]="tile?.title ? 'overlay overlay-button_' + tile.location : ''"
+	[href]="tile.href"
+  [title]="tile.title" 
+  target="_top">
+  &nbsp;</a>
+    
+</div>

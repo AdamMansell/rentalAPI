@@ -1,0 +1,5 @@
+<div class="headerContainer">
+  <h2 *ngIf="event?.community?.overline && event?.community?.overline?.length">{{ event?.community?.overline | uppercase }}</h2>
+  <h1 *ngIf="event?.community?.heading && event?.community?.heading?.length" >{{ event?.community?.heading | uppercase }}</h1>
+  <p *ngIf="event?.community?.description[0] && event?.community?.description[0]?.length" class="summary">{{ event?.community?.description[0] }}</p>
+</div>

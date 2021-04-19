@@ -1,0 +1,16 @@
+<div class="linksContainer">
+  <div class="link" *ngFor="let meeting of meetings">
+    <div>
+      <div class="image">
+        <img src="{{ mediaUrl }}/{{ eventScope }}-public/resources/{{ meeting.image }}">
+      </div>
+    </div>
+    <div class="content">
+      <h3>{{ meeting.title | uppercase }}</h3>
+      <p>{{ meeting.description }}</p>
+      <a target="_parent" href="{{ meeting.buttonLink }}">
+        {{ event.meetings.buttonText | uppercase }}
+      </a>
+    </div>
+  </div>  
+</div>

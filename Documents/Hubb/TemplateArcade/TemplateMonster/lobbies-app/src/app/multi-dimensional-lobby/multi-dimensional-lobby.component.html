@@ -1,0 +1,24 @@
+<!-- sessions -->
+<multi-dimensional-nine-sessions-lobby
+[mediaUrl]="mediaUrl"
+*ngIf="lobbyType === 'sessions' && lobbySubType === 'nine' || !lobbyType" 
+[sessionsData]="lobbyData" 
+[scope]="scope" ></multi-dimensional-nine-sessions-lobby>
+
+<!-- expo --> 
+<multi-dimensional-five-expo 
+*ngIf="lobbyType === 'expo' && lobbySubType === 'five'" 
+[expoData]="lobbyData" 
+[scope]="scope" 
+[mediaUrl]="mediaUrl"></multi-dimensional-five-expo>
+
+
+<!-- sponsor --->
+<multi-dimensional-thirty-sponsor-lobby 
+[mediaUrl]="mediaUrl"
+*ngIf="lobbyType === 'sponsor' && lobbySubType === 'thirty'" 
+[sponsorData]="lobbyData" 
+[scope]="scope" ></multi-dimensional-thirty-sponsor-lobby>
+
+  <!-- shared -->
+  <mobile-event-tiles [tiles]="getMobileTiles()" [colors]="getMobileViewColors()" ></mobile-event-tiles>

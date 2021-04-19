@@ -1,0 +1,34 @@
+<app-main-layout
+[theme]="event?.theme"
+[mediaUrl]="mediaUrl"
+[eventBackgroundImage]="event?.sessions?.backgroundImage"
+[eventLogo]="event?.logo" 
+[scope]="scope">
+  <div [ngClass]="(event?.theme?.client && event?.theme?.client?.length) ? 'flexContainer ' + event?.theme?.client : 'flexContainer'" >
+    <app-header 
+      [descriptions]="event?.sessions?.description" 
+      [heading]="event?.sessions?.heading" 
+      [overline]="event?.sessions?.overline"
+      [year]="event?.year">
+    </app-header>
+    <a target="_parent" 
+        *ngIf="event?.sessions?.sessionsButton?.buttonLink && event?.sessions?.sessionsButton?.buttonText" 
+        class="sessions-button" 
+        href="{{ event?.sessions?.sessionsButton?.buttonLink + scope }}">
+      {{ event?.sessions?.sessionsButton?.buttonText | uppercase }}
+    </a>
+  </div>
+
+  <div class="carouselContainer">
+    <ng-container *ngIf="event?.featuredSessionsCarousel?.items && event?.featuredSessionsCarousel?.items?.length" >
+      <app-carousel
+        [mediaUrl]="mediaUrl"
+        [buttonText]="event?.featuredSessionsCarousel?.buttonText" 
+        [heading]="event?.featuredSessionsCarousel?.heading" 
+        [items]="event?.featuredSessionsCarousel?.items"
+        [scope]="scope"
+        [custom]="event?.sessions?.customCarousel">
+      </app-carousel>
+    </ng-container>
+</div>
+</app-main-layout>

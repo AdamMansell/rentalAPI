@@ -1,0 +1,16 @@
+<app-background
+[mediaUrl]="mediaUrl"
+*ngIf="eventBackgroundImage"
+[bgimage]="eventBackgroundImage" 
+[bgshape]="eventShapeImage" 
+[scope]="scope" >
+</app-background>
+
+<app-logo
+[mediaUrl]="mediaUrl"
+*ngIf="eventLogo"
+[eventLogo]="eventLogo" 
+[scope]="scope" >
+</app-logo>
+
+<ng-content></ng-content>

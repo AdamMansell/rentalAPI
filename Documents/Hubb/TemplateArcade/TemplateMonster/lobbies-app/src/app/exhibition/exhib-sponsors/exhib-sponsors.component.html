@@ -1,0 +1,8 @@
+<div class="sponsorsContainer" >
+  <div class="sponsor" *ngFor="let sponsor of eventSponsors">
+    <a *ngIf="sponsor.link" [href]="sponsor.link" target="_top" >  
+      <img src="{{ mediaUrl }}/{{ eventScope }}-public/resources/{{ sponsor.image }}">
+    </a>
+    <img  *ngIf="!sponsor.link"  src="{{ mediaUrl }}/{{ eventScope }}-public/resources/{{ sponsor.image }}">
+  </div>
+</div>

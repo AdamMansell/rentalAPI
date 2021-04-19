@@ -1,0 +1,46 @@
+.headerContainer {
+  background-color:  transparent;
+  padding: 0 40px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 30px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-weight: 700px;
+  font-size: 60px;
+  line-height: 45px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+.summary {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  width: 43%;
+  padding-bottom: 25px;
+}
+
+h1, h2 {
+  margin:0;
+}
+
+@media screen and (max-width: 750px) {
+  /* h1 {
+      font-size: 70px;
+      line-height: 55px;
+  } */
+
+  h2 {
+      font-size: 32px;
+  }
+
+  .headerContainer {
+      padding: 0 20px;
+  }
+}

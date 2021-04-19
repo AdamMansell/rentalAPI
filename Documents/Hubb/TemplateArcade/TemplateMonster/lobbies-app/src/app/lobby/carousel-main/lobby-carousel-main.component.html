@@ -1,0 +1,24 @@
+<div id="carousel-main-container">
+  <p class="carousel-title"> {{ event?.featuredSessionsCarousel?.items?.heading | uppercase }}</p>
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let slide of slides">
+        <div class="image-div">
+          <img src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ slide.image }}" alt="slider image">
+        </div>
+        <div>
+          <p class="title">{{slide.title | uppercase}}</p>
+          <p class="heading">{{slide.heading | uppercase}}</p>
+          <p class="description">{{slide.description}}</p>
+          <a href="{{slide.buttonLink}}" target="_top">{{event?.featuredSessionsCarousel?.buttonText | uppercase }}</a>
+        </div>
+      </div> 
+      
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+    <!-- Add Arrows -->
+    <div class="swiper-button-next slider-button"></div> 
+    <!-- <div class="swiper-button-prev slider-button"></div> -->
+  </swiper>
+</div>

@@ -1,0 +1,29 @@
+.video-container {
+  position: relative, absolute;
+  overflow: hidden;
+  padding: 0 0 40px 40px;
+}
+
+.video-container video {
+  width: 346px;
+  height: 195px;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .video-container video {
+    width: 409px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .video-container {
+    padding: 0 20px 15px 20px;
+  }
+
+  .video-container video {
+    width: 340px;
+    height: 190px;
+  }
+}

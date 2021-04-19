@@ -1,0 +1,14 @@
+<div class="linksContainer">
+  <div class="link" *ngFor="let link of links">
+    <div>
+      <div class="image">
+        <img src="{{ mediaUrl }}/{{ scope }}-public/resources/{{ link.image }}">
+      </div>
+    </div>
+    <div class="content">
+      <h3>{{ link.title | uppercase }}</h3>
+      <p>{{ link.description }}</p>
+      <a target="_parent" href="{{ link.buttonLink }}">{{ event.community.buttonText | uppercase }}</a>
+    </div>
+  </div>  
+</div>

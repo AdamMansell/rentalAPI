@@ -1,0 +1,17 @@
+.meetingsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+meet-links {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 1150px) {
+  .meetingsContainer {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,174 @@
+.hubb_card {
+    min-height: 200px;
+    margin: 20px;
+    padding: 0 20px 0 20px;
+    background-color: var(--mobile-background-color);
+    color: var(--mobile-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .overlay {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-mobile {
+    display: none;
+  }
+
+  /* DESKTOP/TABLET LOBBY CSS*/
+  .desktop-container {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #session-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .overlay-button_1 {
+    position: absolute;
+    top: 55.5%;
+    left: 2%;
+    width: 4.5%;
+    height: 9%;
+    padding-right: 1%;
+    z-index: 2;
+  }
+
+  .overlay-button_2 {
+    position: absolute;
+    top: 65.8%;
+    left: 2.8%;
+    width: 4.1%;
+    height: 9%;
+    padding-right: 1%;
+    z-index: 2;
+}
+
+  .overlay-button_3 {
+    position: absolute;
+    top: 74%;
+    left: 1.8%;
+    width: 4.1%;
+    height: 9%;
+    padding-left: 1%;
+    z-index: 2;
+}
+
+  .overlay-tiles-box-1 {
+    position: absolute;
+    left: 10.05%;
+    top: 29.49%;
+    width: 8.33%;
+    height: 14.91%;
+    z-index: 2;
+  }
+
+  .overlay-tiles-box-2 {
+    position: absolute;
+    left: 34.69%;
+    top: 29.35%;
+    width: 8.36%;
+    height: 14.86%;
+    z-index: 2;
+  }
+
+  .overlay-tiles-box-3 {
+    position: absolute;
+    left: 68.8%;
+    top: 29.12%;
+    width: 8.36%;
+    height: 14.26%;
+    z-index: 2;
+  }
+
+  .overlay-tiles-box-4 {
+    position: absolute;
+    left: 10.05%;
+    top: 51.81%;
+    width: 8.41%;
+    height: 14.63%;
+    z-index: 2;
+  }
+
+  .overlay-tiles-box-5 {
+    position: absolute;
+    left: 34.69%;
+    top: 55.05%;
+    width: 8.33%;
+    height: 14.95%;
+    z-index: 2;
+  }
+
+.overlay-tiles-box-6 {
+    position: absolute;
+    left: 68.85%;
+    top: 51.81%;
+    width: 8.36%;
+    height: 14.63%;
+    z-index: 2;
+}
+
+  a.overlay,
+  a.overlay:link,
+  a.overlay:visited,
+  a.overlay:hover,
+  a.overlay:active {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+
+  a.overlay-white,
+  a.overlay-white:link,
+  a.overlay-white:visited,
+  a.overlay-white:hover,
+  a.overlay-white:active {
+    color: #ffffff;
+    font-size: .8vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .desktop-container {
+      display: none;
+    }
+
+    .dashboard-mobile {
+      display: block;
+    }
+  }
+  
+  .mobile_image_container
+	{
+		padding: 0 !important;
+		display: grid !important;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		position: relative;
+	}
+  
+  .custom_background_image {
+		max-width: 100% !important;
+		min-height: 100% !important;
+		object-fit: cover !important;
+	}

@@ -1,0 +1,258 @@
+html, body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(to right, #1e94ce, #35c887) !important;
+  background-repeat:repeat;
+}
+
+
+/* 8-Week Project Plan*/
+.tile {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  margin: 11px;
+  width: auto;
+}
+
+p {
+  color: rgb(134, 134, 134);
+  font-size: .87em;
+  margin: 4px;
+  padding: 5px;
+}
+
+p.headertext{
+  color:rgb(236, 236, 236) !important;
+  font-size: .9em;
+}
+
+.tablelabel {
+  padding: 10px 0px 10px 34px;
+  color: rgb(49, 49, 49);
+}
+
+.tablecontainer {
+  background-color: white;
+  margin: 50px 70px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.col_heading {
+  margin-bottom: -3px;
+}
+.projectplan {
+    margin: auto;
+    margin: 0 auto;
+    min-width: 400px;
+    font-size: 0.9em;
+    border-collapse: separate;
+    border-spacing: 6px 0;
+    min-height: 440px;
+    padding: 0 28px;
+  }
+
+  .projectplan thead tr {
+    background-color: #30caab;
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .projectplan td {
+    min-width: 170px;
+    max-width: 150px;
+    border: 2px solid rgb(219, 219, 219);
+    border-spacing:20px;
+    border-top: none;
+    border-radius: 3px;
+    vertical-align: top;
+  }
+
+  .projectplan th {
+    padding: 12px 15px;
+    border: 2px solid #30caab;
+    border-radius: 3px;
+  }
+
+  .projectplan th:nth-child(2) {
+    background-color: #30cab5;
+  }
+  .projectplan th:nth-child(3) {
+    background-color: #30cac2;
+  }
+  .projectplan th:nth-child(4) {
+    background-color: #30c5ca;
+  }
+  .projectplan th:nth-child(5) {
+    background-color: #30c0ca;
+  }
+  .projectplan th:nth-child(6) {
+    background-color: #30b3ca;
+  }
+  .projectplan th:nth-child(7) {
+    background-color: #30abca;
+  }
+  .projectplan th:nth-child(8) {
+    background-color: #309eca;
+  }
+  .projectplan th:nth-child(9) {
+    background-color: #1e94ce;
+  }
+
+
+
+
+/* Additional CSS from Untethered Admin page (needed?) */
+
+  .pageHeadingActions-v2  {
+              display: none;
+          }
+  body, .hubbContentViewPort {
+      background-color: #20c687;
+  }
+
+  #admincustomdashboard {
+      /* background: linear-gradient(to right, rgb(183,88,206) 50%, rgb(170,61,200) 50%); */
+      height: 100%;
+      color: white;
+  }
+
+  #admincustomdashboard > h1 {
+      margin-top: 0px;
+  }
+
+  #admincustomdashboard > h1, #admincustomdashboard > p {
+      margin: 0 20px 10px 65px;
+  }
+
+  #categorysection {
+      margin: 0 20px;
+  }
+
+  .categoryheadertab {
+      text-align: end;
+      background-color: unset;
+  }
+
+  .tab a.tablink, .tabs .tab a.tablink {
+      color: white;
+      font-size: 17px;
+  }
+
+  .tabdetail {
+      /* background-color: white; */
+      height: 100%;
+  }
+
+  .eventstatsbody, .eventprojectplanbody, .trainingsbody, .resourcesbody, .yourteambody, .TBreportbody  {
+      background-color: white;
+      height: 300px;
+      color: black;
+      padding: 0 20px;
+      margin-top: 20px;
+  }
+
+  .resourcesbody {
+      width: 49%;
+      float: left;
+  }
+
+  .yourteambody {
+      width: 49%;
+      float: right;
+  }
+
+  .customColumn {
+      display: inline-block;
+      margin-top: 20px;
+  }
+
+  .eventstatsbody > p, .eventprojectplanbody > p, .trainingsbody > p, .resourcesbody > p, .TBreportbody > p, .yourteambody > p {
+      padding-top: 20px;
+      font-weight: bold;
+      margin-top: 0px;
+  }
+
+  .trainingsbody > .column {
+      float: left;
+      width: 33.33%;
+      height: inherit;
+  }
+
+  .trainingsbody > .column > .columnBody {
+      width: 80%;
+      margin: 0px auto 0 auto;
+      padding-top: 20px;
+  }
+
+  .trainingsbody > .column > .columnBodyNav101 {
+      margin: 20px auto;
+      height: -webkit-fill-available;
+  }
+
+  .trainingsbody:after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .Nav101_bg {
+      background-color: #f0faff;
+  }
+
+  .navTraining {
+      color: #0092d2;
+      margin: 0px 20px;
+      padding-top: 10px;
+  }
+
+  .navTraining > h1 {
+      font-size: 2.3em;
+      margin-top: 0px;
+      text-align: center;
+  }
+
+  .admindashboardbtn {
+      background-color: white;
+      border: 1px solid #0092d2;
+      border-radius: 6px;
+      color: #0092d2;
+      box-shadow: none;
+      background: white;
+  }
+
+  .navTraining > .admindashboardbtn {
+      display: inline-block;
+  }
+
+  .nav_extenstion > .btn_inline {
+      display: block;
+      margin: 10px;
+      text-align: left;
+  }
+
+  .resources_extenstion > .column > .btn_inline {
+      display: block;
+      margin: 10px;
+      text-align: left;
+  }
+
+  .resources_extenstion.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .resources_extenstion.row > .column {
+      float: left;
+      width: 50%;
+  }
+
+
+  .footer {
+      display: none;
+  }
+

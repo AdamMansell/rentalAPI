@@ -1,0 +1,14 @@
+/**
+* PLURALSIGHT CUSTOM DARK THEME STYLES
+* loaded on demand as an external asset do not include it directly on the project source.
+*/
+
+/* MAIN LOGO */
+app-logo #logo {
+    height: 50px !important;
+}
+
+/* CAROUSEL BUTTONS */
+.swiper-slide > div > a {
+    font-size: 12px !important;
+}

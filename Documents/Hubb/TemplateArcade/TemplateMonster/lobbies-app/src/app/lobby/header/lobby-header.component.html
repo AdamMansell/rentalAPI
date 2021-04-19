@@ -1,0 +1,12 @@
+<div class='headerContainer'>
+    <h2 *ngIf="event?.lobby?.overline" >{{ event?.lobby?.overline | uppercase }}</h2>
+    <h1 *ngIf="event?.name || event?.year" >
+        <span class="eventName">{{ event?.name | uppercase }}</span>
+        <span class="eventYear">{{ event?.year}}</span>
+    </h1>
+    <div *ngIf="event?.lobby?.description && event?.lobby?.description?.length" class="summary">
+        <p *ngFor="let description of event?.lobby?.description" >
+            {{ description }}
+        </p>
+    </div>
+</div>

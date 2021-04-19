@@ -1,0 +1,31 @@
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.videoContainer {
+  flex-direction: row;
+  display: flex;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+  .flexContainer {
+    width: 100vw;
+  }
+
+  .carouselContainer {
+    background-color:#1C1F23;
+  }
+
+  .sponsorsContainer {
+    background-color: #212429;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .videoContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+<loader-componet *ngIf=""></loader-componet>
+
+<div *ngIf="scopeNotAvailableError" id="no-scope-error" >
+    <h1>The event id is missing in the url, please add it to the url and try again.</h1>
+</div>
+<div *ngIf="scriptNotLoadedError" id="no-scope-error" >
+    <h1>The event info is not available, ensure with your admin that the event file exists.</h1>
+</div>
+
+<ng-container *ngIf="!scopeNotAvailableError && !scriptNotLoadedError" #showContent() >
+    <router-outlet></router-outlet>
+</ng-container>

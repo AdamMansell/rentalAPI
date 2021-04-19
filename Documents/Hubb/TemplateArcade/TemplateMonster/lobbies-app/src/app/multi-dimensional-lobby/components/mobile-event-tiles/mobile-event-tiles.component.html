@@ -1,0 +1,10 @@
+<div class="dashboard-mobile">
+  <a
+  class="hubb_card"
+  *ngFor="let tile of tiles; let index = index"
+	[href]="tile.href"
+	[title]="tile.title"
+    target="_top">
+  {{ tile.title }}
+  </a>
+</div>

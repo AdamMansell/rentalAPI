@@ -1,0 +1,27 @@
+<app-main-layout
+[mediaUrl]="mediaUrl"
+[theme]="event?.theme"
+[eventBackgroundImage]="event?.lobby?.backgroundImage"
+[eventShapeImage]="event?.lobby?.backgroungSVG"
+[eventLogo]="event?.logo"
+
+[scope]="scope" >
+  <div [ngClass]="(event?.theme?.client && event?.theme?.client?.length) ? 'flexContainer ' + event?.theme?.client : 'flexContainer'" >
+    <lobby-header [event]="event"></lobby-header>
+    <div class="videoContainer">
+      <lobby-video *ngIf="eventLobbyVideo" [eventLobbyVideo]="eventLobbyVideo"></lobby-video>
+      <lobby-v-buttons 
+      *ngIf="event?.lobby?.verticalButtons && event?.lobby?.verticalButtons?.length" 
+      [verticalButtons]="event?.lobby?.verticalButtons"></lobby-v-buttons>
+    </div>
+  </div>
+  <div class="carouselContainer">
+    <ng-container *ngIf="event?.featuredSessionsCarousel?.items && event?.featuredSessionsCarousel?.items?.length">
+      <lobby-carousel-main [event]="event" [scope]="scope" [mediaUrl]="mediaUrl" ></lobby-carousel-main>
+      <lobby-tiled-carousel [event]="event" [scope]="scope" [mediaUrl]="mediaUrl" ></lobby-tiled-carousel>
+    </ng-container>
+  </div>
+  <div class="sponsorsContainer">
+    <lobby-sponsors [eventScope]="scope" *ngIf="event?.sponsors" [eventSponsors]="event?.sponsors" [mediaUrl]="mediaUrl" ></lobby-sponsors>
+</div>
+</app-main-layout>
