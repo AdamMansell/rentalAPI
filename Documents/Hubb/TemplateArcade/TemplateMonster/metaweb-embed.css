@@ -1,0 +1,33 @@
+/*This is currently hosted with the angular app*/
+/*included using @import in the embed code*/
+body {
+    overflow: hidden !important;
+}
+.mobileWrapper.ui-content { 
+padding: 0!important;
+}
+.hubbContentViewPort { 
+padding-top: 0!important;
+height: 100%!important; 
+}
+.pageHeadingActions, 
+.notification.Information, 
+.pageContent.mobileBottomLinkContainer { 
+display: none!important; 
+}
+.embed-container { 
+position: relative; 
+padding-bottom: 95vh; 
+height: 0; 
+overflow: hidden; 
+max-width: 100%; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+}

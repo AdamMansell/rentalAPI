@@ -1,0 +1,3 @@
+[submodule "hubb-api-angular-test"]
+	path = hubb-api-angular-test
+	url = https://github.com/hubba180/hubb-api-angular-test.git
