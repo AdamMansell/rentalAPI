@@ -36,8 +36,8 @@ export default class EventInfoService {
    */
    public buildScript(eventScope: string): void {
       let script = this._renderer2.createElement('script');
-      // script.src = `${environment.MEDIA_BLOB_URL}/${eventScope}-public/resources/event-config.js`;
-      script.src = '../../assets/event-config.js';
+      script.src = `${environment.MEDIA_BLOB_URL}/${eventScope}-public/resources/event-config.js`;
+      // script.src = '../../assets/event-config.js';
       this._renderer2.appendChild(this._document.body, script);
       this.emmitScriptAlreadyLoaded();
    }
